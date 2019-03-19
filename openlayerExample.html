@@ -1,0 +1,29 @@
+
+<html lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" type="text/css" href="https://openlayers.org/en/v4.6.5/css/ol.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+    <script type="text/javascript" src="js/funcs.js"></script>
+    <title>OpenLayers exercise</title>
+  </head>
+  <body>
+    <h2>My Map</h2>
+    <div id="map" class="map"></div>
+
+    <div class="formDiv">
+      <form id="changeForm" name="changeForm" method="POST">
+        <h2>CAMBIA LA TRASPARENZA DEI QUARTIERI</h2>
+        Quartiere verde: <input type="text" id="q1" name="q1" onchange="changeLayerColor(0,128,0,1)" ><br>
+        Quartiere rosso: <input type="text" id="q2" name="q2" onchange="changeLayerColor(255,0,0,2)"><br>
+        Quartiere blu: <input type="text" id="q3" name="q3" onchange="changeLayerColor(30,144,255,3);"><br>
+        Quartiere marrone: <input type="text" id="q4" name="q4" onchange="changeLayerColor(188,143,143,4)"><br>
+      </form>       
+    </div>
+
+    <script type="text/javascript" src="js/init.js"></script>
+  </body>
+</html>
